@@ -25,7 +25,7 @@
 .skills-marquee {
   display: flex;
   gap: 2rem;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 8s linear infinite;
   white-space: nowrap;
 }
 

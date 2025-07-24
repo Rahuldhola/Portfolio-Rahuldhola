@@ -30,7 +30,7 @@ const projects = [
         title: "Admin Dashboard",
         desc: "Interactive dashboard with charts, users, and roles management.",
         tech: "React, Chart.js, Express, MongoDB",
-        github: "#",
+        github: "https://github.com/Rahuldhola",
         demo: "#",
     },
 ];

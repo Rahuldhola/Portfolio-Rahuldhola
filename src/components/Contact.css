@@ -1,31 +1,53 @@
-/* src/styles/Contact.css */
 .contact-section {
   background-color: #676766;
   padding: 90px 40px;
-        background: url('../image/contect.jpg') center / cover no-repeat;
+  background: url('../image/contect.jpg') center center / cover no-repeat;
+  text-align: center;  /* Center text on all devices */
+  position: relative;
+  color: #f1f2f3;
+}
 
-  text-align: right;
+/* Optional: add a dark overlay for better readability */
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.contact-section h2,
+.contact-section p,
+.contact-form {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-section h2 {
-    margin-left: 400px;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #d1e30f;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-section p {
   font-size: 1.1rem;
-  color: #5fd019;
+  color: #a7d31c; /* slightly softer green */
   margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-form {
   display: flex;
   justify-content: center;
-  margin-left: 400px;
   gap: 2rem;
   flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-form a {
@@ -33,16 +55,56 @@
   font-size: 1.2rem;
   color: #f1f2f3;
   transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 5px;
 }
 
 .contact-form a:hover {
   color: #005fa3;
+  border-color: #005fa3;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-section p {
+    font-size: 1rem;
+  }
+
+  .contact-form a {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-section p {
+    font-size: 0.9rem;
+  }
+
   .contact-form {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .contact-form a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
   }
 }

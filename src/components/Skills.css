@@ -1,0 +1,56 @@
+/* File: src/styles/Skills.css */
+
+.skills-section {
+  padding: 5rem 2rem;
+  background-color: #676767;
+      background: url('../image/skills.jpg') center / cover no-repeat;
+
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #b2d310;
+}
+
+.skills-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-marquee {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-left 20s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.skill-badge {
+  background-color: #f6f6f9a5;
+  color: black;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: scale(1.1);
+}

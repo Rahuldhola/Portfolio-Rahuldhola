@@ -1,0 +1,71 @@
+/* Base navbar - transparent background, white text */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 96%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 999;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.566); /* White text initially */
+  transition: color 0.3s ease;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar-links li a {
+  color: rgba(255, 255, 255, 0.671); /* White links initially */
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #6c63ff;
+}
+
+/* When scrolled, add this class to navbar */
+.navbar.scrolled {
+  background-color: #67676628;  /* White background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navbar.scrolled .navbar-logo,
+.navbar.scrolled .navbar-links li a {
+  color: #fbfafaa4;  /* Dark text on scroll */
+}
+
+.navbar.scrolled .navbar-links li a:hover {
+  color: #6c63ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    display: none;
+    
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    display: none;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}

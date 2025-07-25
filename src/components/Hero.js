@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../image/profile.jpg';
+import profileImg from '../image/Rahul1.jpg';
 import './Hero.css';
 
 function Hero() {

@@ -1,63 +1,15 @@
-/* 
-.projects-section {
-  padding: 80px 20px;
-  background-color: #676766;
-  text-align: center;
-}
-
-.projects-section h2 {
-  font-size: 2.5rem;
-  color: #d3e01a;
-  margin-bottom: 2rem;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.project-card {
-  background-color: #f9f9f9b6;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-title {
-  font-size: 1.25rem;
-  color: #41de36;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.project-desc {
-  font-size: 1rem;
-  color: #666666;
-}
- */
-/* src/styles/Projects.css */
-
 .timeline-section {
-  background-color: #676767;
-    background: url('../image/project.jpg') center / cover no-repeat;
-
+  background: url('../image/project.jpg') center / cover no-repeat;
   padding: 5rem 2rem;
   position: relative;
 }
 
 .timeline-heading {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
   color: #d0ed10;
+  font-weight: bold;
 }
 
 .timeline {
@@ -82,6 +34,7 @@
   width: 50%;
   padding: 2rem 3rem;
   box-sizing: border-box;
+  animation: slideIn 0.8s ease;
 }
 
 .timeline-item.left {
@@ -130,18 +83,35 @@
 }
 
 .timeline-item .content {
-  background: #ffffff9c;
+  background: #ffffffee;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   display: inline-block;
   max-width: 90%;
+  transition: transform 0.3s ease;
 }
 
-.timeline-item img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+.timeline-item .content:hover {
+  transform: scale(1.03);
+}
+
+.timeline-item h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.timeline-item h4 {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
 }
 
 .github-link {
@@ -152,7 +122,7 @@
   color: #6c63ff;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .github-link:hover {
@@ -160,8 +130,19 @@
   transform: scale(1.05);
 }
 
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-/* Responsive Design */
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .timeline::before {
     left: 10px;

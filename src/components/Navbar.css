@@ -40,7 +40,8 @@
 }
 
 .navbar-links li a:hover {
-  color: #6c63ff;
+  color: #169fc5;
+  box-shadow: 0 0 30px #d1ac1c;
 }
 
 /* Navbar scrolled - solid background, white text */

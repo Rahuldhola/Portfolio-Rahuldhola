@@ -27,7 +27,6 @@ function Contact() {
         <form className="contact-form" onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
-          <input type="tel" name="number" placeholder="Your Phone Number" required />
           <textarea name="message" rows="4" placeholder="Your Message" required />
           <button type="submit">Send</button>
         </form>

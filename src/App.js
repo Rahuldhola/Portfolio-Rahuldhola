@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,6 +12,7 @@ import './App.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import { Home } from 'lucide-react';
 
 function App() {
    useEffect(() => {
@@ -20,14 +23,64 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-    </div>
+    <Router>
+      <Routes>
+       
+        <Route  path="/"
+          element={
+            <>
+              <Navbar/>
+              <Hero />
+              <About/>
+              <Projects/>
+              <Skills/>
+              <Contact/>
+            </>
+          } />
+          {/* <Route  path="/about"
+          element={
+            <>
+             <Navbar/>
+              <About  />
+              <Projects/>
+
+            </>
+          } />
+          <Route  path="/contact"
+          element={
+            <>
+              <Navbar/>
+              <Contact  />
+            </>
+          } />
+          <Route  path="/projects"
+          element={
+            <>
+              <Navbar/>
+              <Projects  />
+              <Skills/>
+            </>
+          } />
+
+          <Route  path="/skills"
+          element={
+            <>
+              <Navbar/>
+              <Skills  />
+              <Contact/>
+            </>
+          } /> */}
+      </Routes>
+
+    </Router>
+    // <div className="App">
+    //   <Navbar />
+    //   <Hero />
+    //   <About />
+    //   <Projects />
+    //   <Skills />
+    //   <Contact />
+    // </div>
   );
 }
 

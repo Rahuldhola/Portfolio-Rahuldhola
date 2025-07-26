@@ -37,7 +37,7 @@ function Navbar() {
       </div>
 
       <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
-        <li><a href="#home" onClick={closeMenu}>Home</a></li>
+        <li><a href="/" onClick={closeMenu}>Home</a></li>
         <li><a href="#about" onClick={closeMenu}>About</a></li>
         <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
         <li><a href="#skills" onClick={closeMenu}>Skills</a></li>

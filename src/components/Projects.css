@@ -65,7 +65,7 @@
   left: -8px;
 }
 
-.timeline-item .line {
+.timeline-item .lines {
   position: absolute;
   top: 38px;
   width: 40px;
@@ -74,11 +74,11 @@
   z-index: 1;
 }
 
-.timeline-item.left .line {
+.timeline-item.left .lines {
   right: 8px;
 }
 
-.timeline-item.right .line {
+.timeline-item.right .lines {
   left: 8px;
 }
 

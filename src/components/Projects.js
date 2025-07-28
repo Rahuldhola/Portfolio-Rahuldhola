@@ -37,7 +37,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={project.id} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
             <div className='dot' />
-            <div className='line' />
+            <div className='lines' />
             <div className="content">
               <h3>{project.title}</h3>
               <p>{project.desc}</p>

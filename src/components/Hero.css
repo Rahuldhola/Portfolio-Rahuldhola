@@ -68,12 +68,19 @@ h1 {
 
 /* Typing Animation */
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 
 .hero-btn {
@@ -93,7 +100,7 @@ h1 {
   background: #fff;
   color: #000;
   transform: scale(1.05);
-  
+
   box-shadow: 0 0 30px #ffce00;
 }
 
@@ -133,6 +140,7 @@ h1 {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

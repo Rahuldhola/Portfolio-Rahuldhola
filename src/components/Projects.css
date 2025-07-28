@@ -181,7 +181,7 @@
     left: 0;
   }
 
-  .timeline-item .line {
+  .timeline-item .lines {
     left: 8px;
   }
 
@@ -189,4 +189,5 @@
   .timeline-item.right {
     left: 0;
   }
+  
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Projects.css';
 import { FaGithub } from "react-icons/fa";
 
@@ -30,12 +30,42 @@ const projects = [
 ];
 
 const Projects = () => {
+  const itemsRef = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    itemsRef.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      itemsRef.current.forEach((el) => {
+        if (el) observer.unobserve(el);
+      });
+    };
+  }, []);
+
   return (
     <section id='projects' className="timeline-section">
       <h2 className="timeline-heading">My Projects</h2>
       <div className="timeline">
         {projects.map((project, index) => (
-          <div key={project.id} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+          <div
+            key={project.id}
+            className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
+            ref={(el) => (itemsRef.current[index] = el)}
+          >
             <div className='dot' />
             <div className='lines' />
             <div className="content">

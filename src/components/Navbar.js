@@ -25,7 +25,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-logo">
-        <a href="/" onClick={closeMenu} style={{ textDecoration: 'none', color: scrolled ? 'white' : 'white' }}>
+        <a href="/" onClick={closeMenu} className="navbar-a" style={{ textDecoration: 'none', }}>
           Rahul
         </a>
       </div>

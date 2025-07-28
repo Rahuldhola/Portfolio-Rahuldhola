@@ -20,6 +20,16 @@
   font-weight: bold;
   color: inherit;
   transition: color 0.4s ease;
+
+}
+.navbar-a{
+  color: white;
+}
+.navbar-a:hover
+{
+  color: #169fc5;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #d1ac1c;
 }
 
 .navbar-links {
@@ -37,10 +47,12 @@
   text-decoration: none;
   transition: color 0.3s ease;
   cursor: pointer;
+  padding: 5px;
 }
 
 .navbar-links li a:hover {
   color: #169fc5;
+  border-radius: 10px;
   box-shadow: 0 0 30px #d1ac1c;
 }
 
@@ -48,12 +60,12 @@
 .navbar.scrolled {
   background-color: rgba(38, 36, 36, 0.596);  /* solid dark */
   box-shadow: 0 4px 12px rgba(57, 55, 55, 0.023);
-  color: white;
+  /* color: white; */
 }
 
 .navbar.scrolled .navbar-logo,
 .navbar.scrolled .navbar-links li a {
-  color: white;
+  /* color: white; */
 }
 
 /* Hamburger toggle */

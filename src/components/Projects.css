@@ -160,7 +160,9 @@
 
 .github-link:hover {
   color: #4b42d1;
-  transform: scale(1.05);
+  transform: scale(1.06);
+  
+
 }
 
 /* Mobile Responsive */

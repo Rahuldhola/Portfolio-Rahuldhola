@@ -33,7 +33,7 @@ function Contact() {
 
         <div className="contact-links">
           <a href="mailto:rahuldhola222@gmail.com">Email</a>
-          <a href="https://github.com/Rahuldhola" target="_blank" rel="noopener noreferrer"><FaGithub/>GitHub</a>
+          <a href="https://github.com/Rahuldhola" target="_blank" rel="noopener noreferrer"><FaGithub />GitHub</a>
           <a href="https://linkedin.com/in/rahul-dhola-425048299" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>

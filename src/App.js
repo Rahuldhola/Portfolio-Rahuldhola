@@ -15,7 +15,7 @@ import { useEffect } from 'react';
 import { Home } from 'lucide-react';
 
 function App() {
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
@@ -25,19 +25,19 @@ function App() {
   return (
     <Router>
       <Routes>
-       
-        <Route  path="/"
+
+        <Route path="/"
           element={
             <>
-              <Navbar/>
+              <Navbar />
               <Hero />
-              <About/>
-              <Projects/>
-              <Skills/>
-              <Contact/>
+              <About />
+              <Projects />
+              <Skills />
+              <Contact />
             </>
           } />
-          {/* <Route  path="/about"
+        {/* <Route  path="/about"
           element={
             <>
              <Navbar/>
@@ -73,14 +73,6 @@ function App() {
       </Routes>
 
     </Router>
-    // <div className="App">
-    //   <Navbar />
-    //   <Hero />
-    //   <About />
-    //   <Projects />
-    //   <Skills />
-    //   <Contact />
-    // </div>
   );
 }
 

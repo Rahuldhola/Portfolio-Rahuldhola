@@ -1,5 +1,6 @@
 .navbar {
-  position: fixed;  /* FIXED for overlay and sticky behavior */
+  position: fixed;
+  /* FIXED for overlay and sticky behavior */
   top: 0;
   left: 0;
   width: 100%;
@@ -7,9 +8,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;  /* transparent initially */
+  background-color: transparent;
+  /* transparent initially */
   transition: background-color 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
-  z-index: 1100;  /* on top */
+  z-index: 1100;
+  /* on top */
   color: white;
   box-sizing: border-box;
 }
@@ -25,6 +28,7 @@
   transition: color 0.4s ease;
 
 }
+
 .navbar-profile-img {
   height: 50px;
   width: 50px;
@@ -32,18 +36,18 @@
   border-radius: 50%;
   border: 2px solid #fff;
 }
-.navbar-profile-img:hover
-{
+
+.navbar-profile-img:hover {
   transform: scale(1.05);
-    box-shadow: 0 0 40px #d1ac1c;
+  box-shadow: 0 0 40px #d1ac1c;
 
 }
 
-.navbar-a{
+.navbar-a {
   color: white;
 }
-.navbar-a:hover
-{
+
+.navbar-a:hover {
   color: #169fc5;
   border-radius: 10px;
   box-shadow: 0 0 30px #d1ac1c;
@@ -75,7 +79,8 @@
 
 /* Navbar scrolled - solid background, white text */
 .navbar.scrolled {
-  background-color: rgba(38, 36, 36, 0.596);  /* solid dark */
+  background-color: rgba(38, 36, 36, 0.596);
+  /* solid dark */
   box-shadow: 0 4px 12px rgba(57, 55, 55, 0.023);
   /* color: white; */
 }
@@ -94,7 +99,8 @@
   height: 21px;
   cursor: pointer;
   color: currentColor;
-  z-index: 1200; /* above menu */
+  z-index: 1200;
+  /* above menu */
 }
 
 .navbar-toggle .bar {
@@ -131,11 +137,14 @@
   /* Hide nav links by default */
   .navbar-links {
     position: fixed;
-    top: 60px;  /* height of navbar */
-    right: -100vw; /* hide offscreen */
+    top: 60px;
+    /* height of navbar */
+    right: -100vw;
+    /* hide offscreen */
     width: 100vw;
     height: calc(100vh - 60px);
-    background-color: #1111115a;  /* dark background for menu */
+    background-color: #1111115a;
+    /* dark background for menu */
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem 1.5rem;

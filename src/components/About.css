@@ -102,9 +102,9 @@
   animation: slideInLeft 1s ease;
 }
 
-.line.left:hover{
+.line.left:hover {
   transform: scale(1.05);
-  
+
   box-shadow: 0 0 30px #ffce00;
 }
 
@@ -115,9 +115,9 @@
   animation: slideInRight 1s ease;
 }
 
-.line.right:hover{
+.line.right:hover {
   transform: scale(1.05);
-  
+
   box-shadow: 0 0 30px #00d4ff;
 }
 
@@ -127,6 +127,7 @@
     transform: translateX(-50px);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
@@ -138,6 +139,7 @@
     transform: translateX(50px);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;

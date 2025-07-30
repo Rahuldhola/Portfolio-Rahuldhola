@@ -29,7 +29,7 @@ function About() {
 
       <div className="about-content">
         <h2>About Me</h2>
-         <div className="about-lines">
+        <div className="about-lines">
           <p className="line left">
             I’m a frontend developer with over 1.5 years of experience.
           </p>
@@ -44,7 +44,7 @@ function About() {
           </p>
         </div>
 
-        
+
       </div>
     </section>
   );

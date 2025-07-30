@@ -27,8 +27,9 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-logo">
-           <a href='/'>    <img src={profileImg} alt="Rahul Dhola" className='navbar-profile-img' />
-</a> 
+        <a href='/'>
+          <img src={profileImg} alt="Rahul Dhola" className='navbar-profile-img' />
+        </a>
         <a href="/" onClick={closeMenu} className="navbar-a" style={{ textDecoration: 'none', }}>
           Rahul
         </a>

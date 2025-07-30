@@ -122,10 +122,24 @@
   display: inline-block;
   max-width: 90%;
   transition: transform 0.3s ease;
+  animation: animations 2s infinite;
+}
+
+@keyframes animations{
+  0%{
+    transform: scale(1);
+    
+
+  }
+  100%{
+    transform: scale(1.03);  
+    box-shadow: 0 0 30px #a9d713;
+  }
 }
 
 .timeline-item .content:hover {
   transform: scale(1.03);
+  animation: push;
   box-shadow: 0 0 30px #a9d713;
 }
 

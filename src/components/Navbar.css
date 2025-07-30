@@ -1,6 +1,5 @@
 .navbar {
   position: fixed;
-  /* FIXED for overlay and sticky behavior */
   top: 0;
   left: 0;
   width: 100%;
@@ -9,15 +8,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  /* transparent initially */
   transition: background-color 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
   z-index: 1100;
-  /* on top */
   color: white;
   box-sizing: border-box;
 }
 
-/* Navbar logo and links inherit color */
 .navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -45,6 +41,7 @@
 
 .navbar-a {
   color: white;
+  text-decoration: none;
 }
 
 .navbar-a:hover {
@@ -77,20 +74,11 @@
   box-shadow: 0 0 30px #d1ac1c;
 }
 
-/* Navbar scrolled - solid background, white text */
 .navbar.scrolled {
   background-color: rgba(38, 36, 36, 0.596);
-  /* solid dark */
   box-shadow: 0 4px 12px rgba(57, 55, 55, 0.023);
-  /* color: white; */
 }
 
-/* .navbar.scrolled .navbar-logo,
-.navbar.scrolled .navbar-links li a {
-  color: white;
-} */
-
-/* Hamburger toggle */
 .navbar-toggle {
   display: none;
   flex-direction: column;
@@ -100,7 +88,6 @@
   cursor: pointer;
   color: currentColor;
   z-index: 1200;
-  /* above menu */
 }
 
 .navbar-toggle .bar {
@@ -123,28 +110,22 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem 1.5rem;
   }
 
-  /* Show hamburger */
   .navbar-toggle {
     display: flex;
   }
 
-  /* Hide nav links by default */
   .navbar-links {
     position: fixed;
     top: 60px;
-    /* height of navbar */
     right: -100vw;
-    /* hide offscreen */
     width: 100vw;
     height: calc(100vh - 60px);
     background-color: #1111115a;
-    /* dark background for menu */
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem 1.5rem;
@@ -156,7 +137,6 @@
     z-index: 1100;
   }
 
-  /* Show menu when active */
   .navbar-links.active {
     right: 0;
   }

@@ -12,7 +12,7 @@ import './App.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
-import { Home } from 'lucide-react';
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -35,6 +35,7 @@ function App() {
               <Projects />
               <Skills />
               <Contact />
+              <Footer/>
             </>
           } />
         {/* <Route  path="/about"

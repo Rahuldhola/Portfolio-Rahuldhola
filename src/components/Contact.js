@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import './Contact.css';
 
 
@@ -8,11 +8,10 @@ function Contact() {
     e.preventDefault();
     const name = e.target.name.value;
     const email = e.target.email.value;
-    const number = e.target.number.value;
     const message = e.target.message.value;
 
     window.location.href = `mailto:rahuldhola222@gmail.com?subject=Portfolio Inquiry from ${name}&body=${encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nPhone: ${number}\n\nMessage:\n${message}`
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     )}`;
   };
 

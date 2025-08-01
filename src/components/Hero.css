@@ -35,7 +35,7 @@
   transition: transform 0.3s ease-in-out;
   transform: scale(1.05);
   box-shadow: 0 0 30px #ffce00;
-  animation: animation 2s infinite;
+  animation: animation 2s ;
 }
 
 @keyframes animation {
